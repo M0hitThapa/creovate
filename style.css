@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: gilroy;
+    font-family: 'Courier New', Courier, monospace;
     color: #000000;
 }
 
@@ -12,7 +12,7 @@ html,body {
 }
 nav{
     position: fixed;
-    
+    z-index: 10;
     display: flex;
     height: 12vh;
     align-items: flex-start;
@@ -41,8 +41,9 @@ nav{
     
 }
 .nav-part2 h5 span{
-    font-size: 0.74vw;
-    font-weight: 400;
+    font-size: 0.8vw;
+    font-weight: 500;
+    transform: translateY(25px);
     display: inline-block;
 }
 
@@ -81,8 +82,8 @@ nav button{
     font-size: 1vw;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 15px 20px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
     border: none;
     color: rgb(255, 255, 255);
 
@@ -140,6 +141,26 @@ nav button svg{
     margin-top: 0.5vw;
     border: 1px solid rgb(53, 50, 50);
     border-radius: 50px;
+}
+
+#moving-div{
+    background-color: red;
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+}
+
+#moving-div .move{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#moving-div .move img{
+    height: 1.2vw;
 }
 #page2 {
     height: 100vh;
